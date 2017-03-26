@@ -1,4 +1,4 @@
-package com.sam_chordas.android.stockhawk;
+package sachin.bakshi.android.stockhawk;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;

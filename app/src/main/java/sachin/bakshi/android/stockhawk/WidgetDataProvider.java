@@ -1,4 +1,4 @@
-package com.sam_chordas.android.stockhawk;
+package sachin.bakshi.android.stockhawk;
 
 /**
  * Created by kapil pc on 12/17/2016.
@@ -11,11 +11,11 @@ import android.database.Cursor;
 import android.widget.RemoteViews;
 import android.widget.RemoteViewsService.RemoteViewsFactory;
 
-import com.sam_chordas.android.stockhawk.data.QuoteColumns;
-import com.sam_chordas.android.stockhawk.data.QuoteProvider;
-
 import java.util.ArrayList;
 import java.util.List;
+
+import sachin.bakshi.android.stockhawk.data.QuoteColumns;
+import sachin.bakshi.android.stockhawk.data.QuoteProvider;
 
 @SuppressLint("NewApi")
 public class WidgetDataProvider implements RemoteViewsFactory {
@@ -88,8 +88,9 @@ public class WidgetDataProvider implements RemoteViewsFactory {
         mChange.clear();
         mIsUp.clear();
         Cursor c = mContext.getContentResolver().query(QuoteProvider.Quotes.CONTENT_URI,
-                new String[] { QuoteColumns.SYMBOL,QuoteColumns.BIDPRICE,QuoteColumns.CHANGE,QuoteColumns.ISUP }, null,
-                null, null);
+                new String[] { QuoteColumns.SYMBOL,QuoteColumns.BIDPRICE,QuoteColumns.CHANGE,QuoteColumns.ISUP },
+                QuoteColumns.ISCURRENT + " = ?",
+                new String[]{"1"}, null);
         for (int i = 0; i < c.getCount(); i++) {
             c.moveToPosition(i);
             mSymbol.add(c.getString(c.getColumnIndex(QuoteColumns.SYMBOL)));

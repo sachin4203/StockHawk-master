@@ -1,4 +1,4 @@
-package com.sam_chordas.android.stockhawk.ui;
+package sachin.bakshi.android.stockhawk.ui;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,7 +10,6 @@ import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import com.sam_chordas.android.stockhawk.R;
 import com.squareup.okhttp.Callback;
 import com.squareup.okhttp.OkHttpClient;
 import com.squareup.okhttp.Request;
@@ -35,6 +34,7 @@ import lecho.lib.hellocharts.model.Line;
 import lecho.lib.hellocharts.model.LineChartData;
 import lecho.lib.hellocharts.model.PointValue;
 import lecho.lib.hellocharts.view.LineChartView;
+import sachin.bakshi.android.stockhawk.R;
 
 public class StockChartActivity extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package com.sam_chordas.android.stockhawk.ui;
+package sachin.bakshi.android.stockhawk.ui;
 
 import android.app.LoaderManager;
 import android.content.Context;
@@ -27,15 +27,16 @@ import com.google.android.gms.gcm.GcmNetworkManager;
 import com.google.android.gms.gcm.PeriodicTask;
 import com.google.android.gms.gcm.Task;
 import com.melnykov.fab.FloatingActionButton;
-import com.sam_chordas.android.stockhawk.R;
-import com.sam_chordas.android.stockhawk.data.QuoteColumns;
-import com.sam_chordas.android.stockhawk.data.QuoteProvider;
-import com.sam_chordas.android.stockhawk.rest.QuoteCursorAdapter;
-import com.sam_chordas.android.stockhawk.rest.RecyclerViewItemClickListener;
-import com.sam_chordas.android.stockhawk.rest.Utils;
-import com.sam_chordas.android.stockhawk.service.StockIntentService;
-import com.sam_chordas.android.stockhawk.service.StockTaskService;
-import com.sam_chordas.android.stockhawk.touch_helper.SimpleItemTouchHelperCallback;
+
+import sachin.bakshi.android.stockhawk.R;
+import sachin.bakshi.android.stockhawk.data.QuoteColumns;
+import sachin.bakshi.android.stockhawk.data.QuoteProvider;
+import sachin.bakshi.android.stockhawk.rest.QuoteCursorAdapter;
+import sachin.bakshi.android.stockhawk.rest.RecyclerViewItemClickListener;
+import sachin.bakshi.android.stockhawk.rest.Utils;
+import sachin.bakshi.android.stockhawk.service.StockIntentService;
+import sachin.bakshi.android.stockhawk.service.StockTaskService;
+import sachin.bakshi.android.stockhawk.touch_helper.SimpleItemTouchHelperCallback;
 
 public class MyStocksActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor> {
 

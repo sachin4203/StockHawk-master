@@ -1,4 +1,4 @@
-package com.sam_chordas.android.stockhawk.service;
+package sachin.bakshi.android.stockhawk.service;
 
 import android.content.ContentProviderOperation;
 import android.content.ContentValues;
@@ -15,10 +15,6 @@ import android.widget.Toast;
 import com.google.android.gms.gcm.GcmNetworkManager;
 import com.google.android.gms.gcm.GcmTaskService;
 import com.google.android.gms.gcm.TaskParams;
-import com.sam_chordas.android.stockhawk.R;
-import com.sam_chordas.android.stockhawk.data.QuoteColumns;
-import com.sam_chordas.android.stockhawk.data.QuoteProvider;
-import com.sam_chordas.android.stockhawk.rest.Utils;
 import com.squareup.okhttp.OkHttpClient;
 import com.squareup.okhttp.Request;
 import com.squareup.okhttp.Response;
@@ -27,6 +23,11 @@ import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.util.ArrayList;
+
+import sachin.bakshi.android.stockhawk.R;
+import sachin.bakshi.android.stockhawk.data.QuoteColumns;
+import sachin.bakshi.android.stockhawk.data.QuoteProvider;
+import sachin.bakshi.android.stockhawk.rest.Utils;
 
 /**
  * Created by sam_chordas on 9/30/15.

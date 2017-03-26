@@ -1,13 +1,13 @@
 <resources>
-    <string name="app_name">Stock Hawk</string>
+    <string name="app_name">Stock Watch</string>
 
-    <string name="action_example" translatable="false">Example action</string>
+    <string name="action_example">Example action</string>
 
     <string name="action_settings">Settings</string>
     <string name="action_change_units">Change Units</string>
     <string name="symbol_search">Recherche par symbole</string>
     <string name="content_test">Rechercher un symbole de stock</string>
-    <string name="input_hint" translatable="false">FB</string>
+    <string name="input_hint">FB</string>
     <string name="input_prefill"></string>
     <string name="network_toast">Uh-oh! Cette application nécessite une connexion Internet</string>
     <string name="no_data_available">Ooops! Pas de connexion Internet disponible!</string>

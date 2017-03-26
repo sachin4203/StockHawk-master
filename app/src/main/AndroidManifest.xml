@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.sam_chordas.android.stockhawk">
+    package="sachin.bakshi.android.stockhawk">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
@@ -19,7 +19,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ui.MyStocksActivity"
+            android:name="sachin.bakshi.android.stockhawk.ui.MyStocksActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,28 +29,28 @@
         </activity>
 
         <service
-            android:name=".service.StockTaskService"
+            android:name="sachin.bakshi.android.stockhawk.service.StockTaskService"
             android:exported="true"
             android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE">
             <intent-filter>
                 <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY" />
             </intent-filter>
         </service>
-        <service android:name=".service.StockIntentService" />
+        <service android:name="sachin.bakshi.android.stockhawk.service.StockIntentService" />
 
         <service
-            android:name=".WidgetService"
+            android:name="sachin.bakshi.android.stockhawk.WidgetService"
             android:permission="android.permission.BIND_REMOTEVIEWS" />
 
         <provider
             android:name=".data.generated.QuoteProvider"
-            android:authorities="com.sam_chordas.android.stockhawk.data.QuoteProvider"
+            android:authorities="sachin.bakshi.android.stockhawk.data.QuoteProvider"
             android:exported="true" />
 
-        <activity android:name=".ui.StockChartActivity"
+        <activity android:name="sachin.bakshi.android.stockhawk.ui.StockChartActivity"
             android:theme="@style/ActTheme"/>
 
-        <receiver android:name=".WidgetProvider">
+        <receiver android:name="sachin.bakshi.android.stockhawk.WidgetProvider">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
